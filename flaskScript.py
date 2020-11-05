@@ -129,9 +129,9 @@ def test():
     return render_template('signup.html')
 
 
-@app.route('/')
-def defult():
-    return render_template('dashboard.html')
+#@app.route('/')
+#def defult():
+#    return render_template('dashboard.html')
 
 
 @app.route('/signup', methods=['GET', 'POST'])
@@ -149,7 +149,7 @@ def form():
     return render_template("signup.html")
 
 
-@app.route('/login', methods=['GET', 'POST'])
+@app.route('/', methods=['GET', 'POST'])
 def login():
     form = registrants()
 
